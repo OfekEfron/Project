@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ofek.myapplication.MainActivity">
+
+        <CheckBox
+            android:text="Agree to our terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbAgree"
+            android:layout_alignBottom="@+id/btnSignup"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteY="289dp"
+            tools:layout_editor_absoluteX="118dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etPassword"
+            android:hint="Password..."
+            android:layout_below="@+id/etUsername"
+            android:layout_alignLeft="@+id/etUsername"
+            android:layout_alignStart="@+id/etUsername"
+            tools:layout_editor_absoluteY="119dp"
+            tools:layout_editor_absoluteX="85dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Confirm Password..."
+            android:id="@+id/etConfirmPassword"
+            android:layout_below="@+id/etPassword"
+            android:layout_alignLeft="@+id/etPassword"
+            android:layout_alignStart="@+id/etPassword"
+            tools:layout_editor_absoluteY="162dp"
+            tools:layout_editor_absoluteX="85dp" />
+
+        <Button
+            android:text="Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignup"
+            android:onClick="signup"
+            android:layout_below="@+id/etConfirmPassword"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteY="321dp"
+            tools:layout_editor_absoluteX="148dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etUsername"
+            android:hint="Username..."
+            android:layout_below="@+id/etName"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteY="76dp"
+            tools:layout_editor_absoluteX="85dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/etName"
+            android:hint="Name..."
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/etUsername"
+            android:layout_alignStart="@+id/etUsername"
+            tools:layout_editor_absoluteY="33dp"
+            tools:layout_editor_absoluteX="85dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>
